@@ -1,1 +1,1 @@
-# SchoolSync_API
+# SchoolSync API
