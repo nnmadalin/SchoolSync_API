@@ -5,7 +5,9 @@
     ob_end_clean();
 
     $token  = $_POST["token"];
-    $token_valid = "W!WSAnXZLOhyQ6lpt=adAhsOaF5Q...";
+
+    include "functions.php";
+    $token_valid = getEnvValue("API_KEY");
 
     if($data['Database connection'] == 'Failed'){
         $data = ['message' => 'database no connection'];
